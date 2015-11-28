@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="xiaoliwu.fish_san.Boss" >
+
+    <ImageButton
+        android:id="@+id/imageButtonBoss1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bossman" />
+
+    <TextView
+        android:id="@+id/textViewBoss1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="2dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <ImageButton
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/egg" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButtonBossMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="76dp"
+                android:src="@drawable/sake" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nuts" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCatFish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageButtonBossMan"
+                android:src="@drawable/catfish" />
+
+            <ImageButton
+                android:id="@+id/imageButtonLeaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageButtonCatFish"
+                android:src="@drawable/leaf" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSushi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageButtonBossMan"
+                android:src="@drawable/sushi" />
+
+            <ImageButton
+                android:id="@+id/imageButtonRamen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageButtonSushi"
+                android:layout_toLeftOf="@+id/imageButtonCatFish"
+                android:src="@drawable/ramen" />
+
+            <ImageButton
+                android:id="@+id/imageButtonHamburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageButtonRamen"
+                android:layout_toLeftOf="@+id/imageButtonLeaf"
+                android:src="@drawable/hamburger" />
+
+            <ImageButton
+                android:id="@+id/imageButtonTea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageButtonLeaf"
+                android:layout_alignTop="@+id/imageButtonHamburger"
+                android:src="@drawable/tea" />
+
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

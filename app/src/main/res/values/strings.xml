@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fish-san</string>
+    <string name="title_activity_plantea">Plantea</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_boss_man">BossMan</string>
+    <string name="title_activity_enigma">Enigma</string>
+    <string name="title_activity_godly_gremlin">GodlyGremlin</string>
+    <string name="title_activity_globbie">Globbie</string>
+    <string name="title_activity_galaxy_cat">Fish-san</string>
+    <string name="title_activity_fuufa">Fuufa</string>
+</resources>
